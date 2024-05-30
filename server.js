@@ -74,6 +74,12 @@ app.use((req, res) => {
     res.status(404).send('Route not found');
 });
 
+// Server deployment
+app.use((req, res) =>{
+    res.send("Server is runniiing~")
+})
+
+
 // Start the server
 app.listen(port, '0.0.0.0', () => {
     console.log(`Server running at http://localhost:${port}`);
